@@ -4,23 +4,36 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
- 
+  font-family: 'Roboto', Arial, Helvetica, sans-serif; 
 }
+
+
+header {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,3,5,1) 34%, rgba(0,212,255,1) 100%);
+  
+}
+
+body {
+  background-color: #16A085;
+  background-image: linear-gradient(132deg, #16A085 0%, #F4D03F 1%, #000000 5%, #ffffff 100%);
+
+}
+
 
 .cabecalho {
   height: 130px;
-  display: flex;
+  margin-bottom: 20px;
+  display: flex; 
   align-items: center;
   justify-content: space-between;
+  box-shadow: 5px 5px 15px 5px #000000;
 }
 
 .logo {
   display: flex;
   gap: 15px;            
-  box-shadow: 0 0 15px rgb(59, 58, 58);
   border-radius: 10px;
-  background-color:#EAA301;
   margin-left: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -36,6 +49,15 @@
   font-size: 40px;
   align-items: center;
   margin: 5px;
+  color: #fff;
+
+}
+
+.title:hover {
+  padding-left: 100px;
+  transition: 1.2s;
+  cursor: pointer;
+  color: #FAD961;
 }
 
 .main_menu { 
@@ -45,33 +67,55 @@
 }
 
 .iten_menu {
-  list-style: none;  
   margin: 10px;
   padding: 15px 45px;
-  text-transform: uppercase;            
-  box-shadow: 0 0 15px rgb(59, 58, 58);
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.8s;
+  background-size: 200% auto;          
   border-radius: 10px;
-  background-color:#EAA301;
-  cursor: pointer; 
+  list-style: none;           
+  background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)
 }
-  
+
+
+.iten_menu:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0px 0px 5px 5px #000000;
+  transform: scale(1.1);
+}
+
 .link_menu {
   text-decoration: none;
-  color: #000000;
   font-size: 20px; 
+  color: #fff;
 }
 
 .background_img {
   width: 100%;
   height: 100%;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.background_img:hover {
+  transform: scale(1.05);
+  transition: 0.7s;
 }
 
 .main_title {
   padding-left: 40px;
-  color: darkgreen;
+  color: #fff;
   margin-top: 20px;
   font-family: 'Dosis' ,Arial, Helvetica, sans-serif;
   font-size: 40px;
+}
+
+.main_title:hover {
+  color: #FAD961;
+  transition: 2s;
+  cursor: pointer;
 }
 
 .main_body {
@@ -88,14 +132,15 @@
   flex-direction: column;
   align-items: center;
   width: 320px;
-  background-color: bisque;
-  box-shadow: 0 0 25px rgb(138, 135, 135);
-  transition: 0.4s;
+  background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+  transition: 0.6s;
   gap: 15px; 
 }
 
 .card:hover {
-  transform: scale(1.07);
+  transform: scale(1.09);
+  cursor: pointer;
+
 }
 
 .background_card {
@@ -129,8 +174,15 @@
   margin-top: 50px;
   font-family: 'Dosis' ,Arial, Helvetica, sans-serif;
   font-size: 45px;
-  color: darkgreen;
+  color: #fff;
 }
+
+.video_title:hover {
+  color: #FAD961;
+  transition: 2s;
+  cursor: pointer;
+}
+
 
 .video_container {
   display: flex;
@@ -145,8 +197,11 @@
 }
 
 footer {
-  background-color: bisque;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,3,5,1) 34%, rgba(0,212,255,1) 100%);
+  box-shadow: 5px 5px 30px 20px #000000;
 }
+
 
 .logo_img_footer {
   border-radius: 50%;
@@ -174,7 +229,7 @@ footer {
 
 .link_title {
   text-align: center;
-  color: #000000;
+  color: #fff;
   font-size: 20px;
 }
 
@@ -186,7 +241,11 @@ footer {
   justify-content: center;
   border-radius: 50%;
   height: 150px;
+}
 
+.links:hover {
+  transform: scale(1.06);
+  transition: 0.6s;
 }
 
 .copy {
@@ -196,12 +255,20 @@ footer {
   height: 50px;
   font-size: 20px;
   font-weight: bold;
+  color: #fff;
 }
 
 .prefeitura {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.menu_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 @media (max-width: 980px) {
@@ -290,3 +357,20 @@ footer {
   }
 
 }
+
+
+.btn-grad {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ 
