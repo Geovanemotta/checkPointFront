@@ -54,7 +54,7 @@ body {
 }
 
 .title:hover {
-  padding-left: 100px;
+  padding-left: 70px;
   transition: 1.2s;
   cursor: pointer;
   color: #FAD961;
@@ -319,6 +319,13 @@ footer {
   .logo {
     margin:0;
     margin-top: 10px;  
+  }
+
+  .title:hover {
+    transition: 1.2s;
+    cursor: pointer;
+    color: #FAD961;
+
   }
 
   .video_container {
